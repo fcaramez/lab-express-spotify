@@ -1,0 +1,19 @@
+{{#each albums}}
+
+  <div class="cartoes">
+
+    <div class="card-group" style="width: 18rem;">
+      <img
+        src="{{this.images.0.url}}"
+        class="card-img-top"
+        alt="{{this.name}}"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+      </div>
+      <div class="card-body">
+        <a href="/tracks/{{this.id}}" class="card-link">View Tracks</a>
+      </div>
+    </div>
+  </div>
+{{/each}}

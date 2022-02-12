@@ -1,0 +1,19 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.choose-artist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/spotify-background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    border: none;
+}
+
+.cartoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
