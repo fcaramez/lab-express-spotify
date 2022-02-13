@@ -18,7 +18,7 @@ spotifyApi
 
 const app = express();
 
-hbs.registerPartials(__dirname + '/views/partials')
+hbs.registerPartials(__dirname + "/views/partials");
 app.set("view engine", "hbs");
 app.set("views", __dirname + "/views");
 app.use(express.static(__dirname + "/public"));

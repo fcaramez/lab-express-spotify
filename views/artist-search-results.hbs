@@ -1,17 +1,15 @@
 {{#each artists}}
-  <div class="cartoes">
+  <div class="alinhados">
 
-    <div class="card-group" style="width: 18rem;">
+    <div class="cartoes-artistas">
       <img
+        class="img-artista"
         src="{{this.images.0.url}}"
-        class="card-img-top"
         alt="{{this.name}}"
       />
-      <div class="card-body">
-        <h5 class="card-title">{{this.name}}</h5>
-      </div>
-      <div class="card-body">
-        <a href="/albums/{{this.id}}" class="card-link">View Albums</a>
+      <div class="texto-cartao">
+        <p>{{this.name}}</p>
+        <a href="/albums/{{this.id}}">View Albums</a>
       </div>
     </div>
   </div>

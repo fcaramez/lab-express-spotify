@@ -1,19 +1,58 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.choose-artist {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("/images/spotify-background.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 900px;
-    border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.cartoes {
+.body-main {
+  background-image: url("/images/spotify-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.choose-artist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+
+/* .alinhados {
+  display: table;
+  table-layout: fixed;
+} */
+
+/* .texto-cartao {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .cartoes-artistas {
+  border: solid black;
+  width: 405px;
+} */
+
+/* .img-artista {
+  max-width: 400px;
+  max-height: 400px;
+} */
+
+.button-submit {
+  background-color: rgb(218, 92, 92);
+  border: none;
+  color: white;
+}
+
+.button-div {
+  background-color: rgb(218, 92, 92);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 225px;
+  margin-left: 110px;
+}
+
+.input-text {
+  width: 450px;
+  margin-bottom: 10px;
 }
