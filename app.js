@@ -18,6 +18,7 @@ spotifyApi
 
 const app = express();
 
+hbs.registerPartials(__dirname + '/views/partials')
 app.set("view engine", "hbs");
 app.set("views", __dirname + "/views");
 app.use(express.static(__dirname + "/public"));
@@ -34,10 +35,6 @@ app.get("/artist-search", (req, res, next) => {
   spotifyApi
     .searchArtists(req.query.artistName)
     .then((data) => {
-      console.log(
-        "The received data from the searchArtists: ",
-        data.body.artists.items.images
-      );
       res.render("artist-search-results", { artists: data.body.artists.items });
     })
     .catch((err) =>
@@ -50,10 +47,6 @@ app.get("/albums/:artistId", (req, res, next) => {
   spotifyApi
     .getArtistAlbums(artistId)
     .then((data) => {
-      console.log(
-        "The received data from the searchArtists: ",
-        data.body.items
-      );
       res.render("albums", { albums: data.body.items });
     })
     .catch((err) =>
